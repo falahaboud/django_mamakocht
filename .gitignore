@@ -1,0 +1,8 @@
+bin/
+include/
+lib/
+.DS_STORE
+.Python
+*.py[cod]
+venv/
+venv.
