@@ -2,7 +2,17 @@
 
 {% block content %}
 
-<h1> ich bin Home</h1>
+<h1>Home</h1>
+<h1>Welcome to my Site , 
+    {% if user.is_authenticated %}
+        {{ user.username}}
+        {% else %} Besucher
+    {% endif %}
+</h1>
+
+<p> 
+    <strong> Total User: </strong> {{ count}}
+</p>
 
 
 {% endblock %}
